@@ -29,8 +29,8 @@ public class AssetMoverServlet extends SlingAllMethodsServlet {
         response.setContentType("text/plain;charset=UTF-8");
         response.getWriter().println("Asset Mover Servlet - Moving assets now...\n");
 
-        String sourcePath = "/content/dam/app";     // your source
-        String targetPath = "/content/dam/sample";    // your target
+        String sourcePath = "/content/dam/sample";     // your source
+        String targetPath = "/content/dam/app";    // your target
 
         try (ResourceResolver resolver = systemUserServiceUtility.getResourceResolver()) {
 
